@@ -1,5 +1,5 @@
 <?php
-                $connect = mysqli_connect('localhost', '', '', '');
+                $connect = mysqli_connect('203.237.142.229', 'ys', '1q2w3e4r!', 'testdb');
                 $number = $_GET['number'];
                 session_start();
                 $query = "select title, content, date, hit, id from board where number =$number";
@@ -34,3 +34,73 @@
                 <button class="view_btn1" onclick="location.href='./delete.php?number=<?=$number?>&id=<?=$_SESSION['userid']?>'">삭제</button>
         </div>
  
+
+        <style>
+                 .view_table {
+                 border: 1px solid #444444;
+                 margin-top: 30px;
+                 }
+                 .view_title {
+                 height: 30px;
+                 text-align: center;
+                 background-color: #cccccc;
+                 color: white;
+                 width: 1000px;
+                 }
+                 .view_id {
+                 text-align: center;
+                 background-color: #EEEEEE;
+                 width: 30px;
+                 }
+                 .view_id2 {
+                 background-color: white;
+                 width: 60px;
+                 }
+                 .view_hit {
+                 background-color: #EEEEEE;
+                 width: 30px;
+                 text-align: center;
+                   }
+                 .view_hit2 {
+                 background-color: white;
+                 width: 60px;
+                  }
+                  .view_content {
+                 padding-top: 20px;
+                 border-top: 1px solid #444444;
+                 height: 500px;
+                 }
+                 .view_btn {
+                 width: 700px;
+                 height: 200px;
+                 text-align: center;
+                 margin: auto;
+                 margin-top: 50px;
+                  }
+                 .view_btn1 {
+                 height: 50px;
+                 width: 100px;
+                 font-size: 20px;
+                 text-align: center;
+                 background-color: white;
+                 border: 2px solid black;
+                 border-radius: 10px;
+                 }
+                 .view_comment_input {
+                 width: 700px;
+                 height: 500px;
+                 text-align: center;
+                 margin: auto;
+                  }
+                 .view_text3 {
+                 font-weight: bold;
+                 float: left;
+                 margin-left: 20px;
+                 }
+                 .view_com_id {
+                 width: 100px;
+                  }
+                 .view_comment {
+                 width: 500px;
+                  }
+                 </style>
