@@ -1,5 +1,5 @@
 <?php
-                $connect = mysqli_connect("230.237.142.229", "ys", "1q2w3e4r!", "testdb") or die("fail");
+                $connect = mysqli_connect('203.237.142.229', 'ys', '1q2w3e4r!', 'testdb') or die("fail");
                 
                 $id = $_GET[name];                      //Writer
                 $pw = $_GET[pw];                        //Password
